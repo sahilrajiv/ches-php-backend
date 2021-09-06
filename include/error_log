@@ -1,0 +1,4 @@
+[01-Sep-2020 01:10:27 UTC] PHP Warning:  Use of undefined constant ROOT_URL - assumed 'ROOT_URL' (this will throw an Error in a future version of PHP) in /home3/chesipwa/public_html/include/top-nav.php on line 7
+[01-Sep-2020 16:48:13 UTC] PHP Warning:  Use of undefined constant ROOT_URL - assumed 'ROOT_URL' (this will throw an Error in a future version of PHP) in /home3/chesipwa/public_html/include/top-nav.php on line 7
+[01-Sep-2020 17:54:16 UTC] PHP Warning:  Use of undefined constant ROOT_URL - assumed 'ROOT_URL' (this will throw an Error in a future version of PHP) in /home3/chesipwa/public_html/include/top-nav.php on line 7
+[02-Sep-2020 20:35:58 UTC] PHP Warning:  Use of undefined constant ROOT_URL - assumed 'ROOT_URL' (this will throw an Error in a future version of PHP) in /home3/chesipwa/public_html/include/top-nav.php on line 7

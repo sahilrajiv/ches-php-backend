@@ -1,0 +1,359 @@
+html {
+    font-size: 112.5%;
+}
+body {
+    
+    font-family: 'Rubik', sans-serif;
+  line-height: 1.65;
+  color: #333;
+  background-image: linear-gradient(to right, #40c9ff, #337eda);
+   /*background-image: linear-gradient(to bottom right, #40c9ff, #e81cff);*/
+}
+.content{
+   background-color: white;
+  /* background-image: linear-gradient(to bottom right, #40c9ff, #e81cff);*/
+    margin: 50px 50px;
+    
+    
+    
+}
+#button {
+  display: inline-block;
+ 
+  background-image: linear-gradient(135deg, #4DC9E6, #210CAE);
+
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+ background-image: linear-gradient(135deg, #0061FF, #60EFFF);
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 500px) {
+  
+  #button {
+    margin: 30px;
+  }
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  margin: 20px 20px;
+}
+.homecontent{
+  margin-top: 20px;
+    padding-top: 6px;
+     padding-bottom: 6px;
+     margin-bottom: 20px;
+     text-align: left;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+p {
+    margin-bottom: 1.15rem;
+}
+ h2, h3, h4, h5 {
+    margin: 2.75rem 0 1.05rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.15;
+}
+h1 {
+  
+    margin-top: 0;
+    font-size: 1.802em;
+}
+h2 {
+    font-size: 1.602em;
+}
+h3 {
+    font-size: 1.424em;
+}
+h4 {
+    font-size: 1.266em;
+}
+h5 {
+    font-size: 1.125em;
+}
+
+small, .text_small {
+        font-size: 0.889em}
+            ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    transition: all 0.1s ease 0s;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: inherit;
+}
+a:focus, a:hover, a:active {
+    text-decoration: none;
+    outline: 0;
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+}
+ .btn-primary, .btn-info, .borderbtn{
+background-color:  #2f29d9;
+    font-family: 'Roboto', sans-serif;
+     border: none;
+
+}
+.btn-outline-primary{
+    border-color: #f2f2f2;
+}
+.btn:hover, .btn-primary:hover, .btn-info:hover, .borderbtn:hover, .btn:active, .btn-primary:active, .btn-info:active, .borderbtn:active{
+
+background-color:#038c25;
+}
+
+.header-area {
+    background-color: #010d50;
+    padding: 2px;
+    font-size: 16px;
+}
+.header-area a {
+    color: hsla(300, 3%, 92%, 1);
+}
+header a:focus, header a:hover, a:active, header i:focus, header i:hover, header a:active {
+    text-decoration: none;
+    outline: 0;
+    color: hsla(0, 100%, 41%, 1);
+}
+header i {
+    color: hsla(300, 3%, 92%, 1);} 
+
+
+
+.head{
+    padding-top: 0px;
+    font-size: 25px;
+  font-family: Georgia, serif;
+
+    text-align: center;
+    margin: auto;
+    margin-left:50px;
+    border-bottom: 3px solid;
+    border-bottom-color: #010d50;
+
+}
+
+* {box-sizing:border-box}
+#sections{
+  display: flex;
+  padding-left: 50px;
+  flex-direction: row;
+
+}
+#sections1{
+  display: flex;
+  padding-left: 50px;
+  flex-direction: row;
+
+}
+@media (max-width: 800px) {
+  #sections {
+    flex-direction: column;
+  }
+  #sections1 {
+    flex-direction: column;
+  }
+}
+.contain {
+  text-align: center;
+
+    padding-left:  15px; 
+    padding-top: 20px;
+    width: 25%;
+    height: 400px;
+    position: relative;
+   
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+.card {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+  transition:all 0.5s ease;
+}
+.card .front:hover{
+  opacity:0.5;
+}
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card .front {
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: #0099ff;
+  color:#333;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .back {
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background: #004d80;
+    color:#333;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+
+
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}      
+footer a, footer p, footer i, footer h4 {
+  color: hsla(300, 3%, 92%, 1);
+}
+footer {
+  padding-top: 330px;
+  background-color: #010D50;
+}
+.footer-area {
+  padding: 70px 40px;
+  justify-content: center;
+  align-content: center;
+}
+footer a:focus, footer a:hover, footer i:hover, footer i:focus, footer i:active {
+  text-decoration: none;
+  outline: 0;
+  color: hsla(0, 100%, 41%, 1) !important;
+}
+* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+@media screen and (min-width:576px ) {
+.profile {
+    border: none;
+}
+.mt-n2 {
+    margin-top: -3%;
+}
+
+}
+
+@media screen and (max-width:575px ) {
+.row .profile-sub {
+    margin: 0px;
+    padding: 0px;
+}
+.contain{
+  width:100%;
+}
+  }
